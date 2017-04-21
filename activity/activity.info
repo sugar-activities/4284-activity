@@ -1,0 +1,7 @@
+[Activity]
+name = GeoGebra
+activity_version = 7
+license = GPLv2+
+icon = geogebra
+bundle_id = org.geogebra
+exec = geogebra

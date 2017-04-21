@@ -1,0 +1,18 @@
+#!/bin/sh
+
+while [ -n "$2" ] ; do
+    case "$1" in
+      	-b | --bundle-id)   export SUGAR_BUNDLE_ID=$2 ;;
+      	-a | --activity-id) export SUGAR_ACTIVITY_ID=$2 ;;
+        *) echo unknown argument $1 $2 ;;
+    esac
+    shift; shift
+done
+
+export LD_PRELOAD=$PWD/lib/libsugarize.so:$LD_PRELOAD
+export PATH=$PWD/jre/bin:$PATH
+
+args="--sugar --showSplash=false"
+[ "$SUGAR_SCALING" == 100 ] && args="$args --fontSize=20"
+
+cd geogebra && exec java -jar geogebra.jar $args

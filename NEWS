@@ -1,0 +1,19 @@
+v6 2012-03-20
+* GeoGebra 4.0.25.0 release
+
+v5 2011-09-07
+* GeoGebra 3.2.47.0 release
+
+v4 2011-01-11
+* GeoGebra 3.2.46.0 release
+
+v3 2010-11-15
+* GeoGebra 3.2.45.0 release
+* GeoGebra doesn't start due to not found javaui_en.properties (Gonzalo Odiard)
+
+v2 2010-07-26
+* GeoGebra 3.2.44.0 release
+* Increase default font size on XO
+
+v1 2010-02-21
+* Initial release
